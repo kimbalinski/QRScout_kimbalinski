@@ -1,8 +1,8 @@
 {
     "title": "QRScout",
-    "page_title": "Reefscape",
+    "page_title": "Reefscape - Match Scouting",
     "delimiter": "\t",
-    "teamNumber": 2713,
+    "teamNumber": 238,
     "theme": {
         "light": {
             "background": "0 0% 100%",
@@ -322,7 +322,7 @@
                     "step": 1
                 },
                 {
-                    "title": "Crossed Feild/Played Defense?",
+                    "title": "Crossed Field/Played Defense?",
                     "type": "boolean",
                     "required": false,
                     "code": "CFPDT",
