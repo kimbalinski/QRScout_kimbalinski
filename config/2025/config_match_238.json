@@ -1,6 +1,6 @@
 {
     "title": "QRScout",
-    "page_title": "Reefscape: Match",
+    "page_title": "Reefscape:Match",
     "delimiter": "\t",
     "teamNumber": 238,
     "theme": {
@@ -110,7 +110,7 @@
                     "description": "The starting position of the robot.",
                     "type": "select",
                     "required": true,
-                    "code": "Prsp",
+                    "code": "start",
                     "defaultValue": "",
                     "choices": {
                         "R1": "Left",
@@ -131,7 +131,7 @@
                     "description": "The starting level of the cage",
                     "type": "select",
                     "required": true,
-                    "code": "CPos",
+                    "code": "cagePos",
                     "defaultValue": "",
                     "choices": {
                         "SP1": "Deep",
@@ -144,11 +144,11 @@
             "name": "Autonomous",
             "fields": [
                 {
-                    "title": "Moved?",
-                    "description": "Check if the robot moved during autonomous.",
+                    "title": "Leave?",
+                    "description": "Check if the robot completed leave during autonomous.",
                     "type": "boolean",
                     "required": false,
-                    "code": "Mved",
+                    "code": "Leave",
                     "defaultValue": false
                 },
                 {
@@ -164,7 +164,7 @@
                     "description": "The number of level 1 coral scored during autonomous.",
                     "type": "counter",
                     "required": false,
-                    "code": "CLOA",
+                    "code": "coralL1A",
                     "defaultValue": 0,
                     "min": 0,
                     "step": 1
@@ -174,7 +174,7 @@
                     "description": "The number of level 2 coral scored during autonomous.",
                     "type": "counter",
                     "required": false,
-                    "code": "CLTA",
+                    "code": "coralL2A",
                     "defaultValue": 0,
                     "min": 0,
                     "step": 1
@@ -184,7 +184,7 @@
                     "description": "The number of level 3 coral scored during autonomous.",
                     "type": "counter",
                     "required": false,
-                    "code": "CLThA",
+                    "code": "coralL3A",
                     "defaultValue": 0,
                     "min": 0,
                     "step": 1
@@ -194,7 +194,7 @@
                     "description": "The number of level 4 coral scored during autonomous.",
                     "type": "counter",
                     "required": false,
-                    "code": "CLFA",
+                    "code": "coralL4A",
                     "defaultValue": 0,
                     "min": 0,
                     "step": 1
@@ -204,7 +204,7 @@
                     "description": "The number of Algae scored in the barge during autonomous.",
                     "type": "counter",
                     "required": false,
-                    "code": "BASA",
+                    "code": "algaeBA",
                     "defaultValue": 0,
                     "min": 0,
                     "step": 1
@@ -214,7 +214,7 @@
                     "description": "The number of Algae scored in the processor during autonomous.",
                     "type": "counter",
                     "required": false,
-                    "code": "PASA",
+                    "code": "algaePA",
                     "defaultValue": 0,
                     "min": 0,
                     "step": 1
@@ -223,7 +223,7 @@
                     "title": "Dislodged Algae?",
                     "type": "boolean",
                     "required": false,
-                    "code": "dto",
+                    "code": "algaeDA",
                     "defaultValue": false
                 },
                 {
@@ -244,19 +244,19 @@
                     "title": "Dislodged Algae?",
                     "type": "boolean",
                     "required": false,
-                    "code": "daT",
+                    "code": "algaeT",
                     "defaultValue": false
                 },
                 {
                     "title": "Pickup Location",
                     "type": "select",
                     "required": false,
-                    "code": "TGPL",
+                    "code": "coralP",
                     "defaultValue": "",
                     "choices": {
                         "1": "None",
                         "2": "Ground",
-                        "3": "Human Player",
+                        "3": "Coral Station",
                         "4": "Both"
                     },
                     "multiSelect": true
@@ -266,7 +266,7 @@
                     "description": "The number of level 1 coral scored during autonomous.",
                     "type": "counter",
                     "required": false,
-                    "code": "CLOT",
+                    "code": "coralL1T",
                     "defaultValue": 0,
                     "min": 0,
                     "step": 1
@@ -276,7 +276,7 @@
                     "description": "The number of level 2 coral scored during autonomous.",
                     "type": "counter",
                     "required": false,
-                    "code": "CLTT",
+                    "code": "coralL2T",
                     "defaultValue": 0,
                     "min": 0,
                     "step": 1
@@ -286,7 +286,7 @@
                     "description": "The number of level 3 coral scored during autonomous.",
                     "type": "counter",
                     "required": false,
-                    "code": "CLThT",
+                    "code": "coralL3T",
                     "defaultValue": 0,
                     "min": 0,
                     "step": 1
@@ -296,7 +296,7 @@
                     "description": "The number of level 4 coral scored during autonomous.",
                     "type": "counter",
                     "required": false,
-                    "code": "CLFT",
+                    "code": "coralL4T",
                     "defaultValue": 0,
                     "min": 0,
                     "step": 1
@@ -306,7 +306,7 @@
                     "description": "The number of Algae scored in the barge during autonomous.",
                     "type": "counter",
                     "required": false,
-                    "code": "BAST",
+                    "code": "algaeBT",
                     "defaultValue": 0,
                     "min": 0,
                     "step": 1
@@ -316,7 +316,7 @@
                     "description": "The number of Algae scored in the processor during autonomous.",
                     "type": "counter",
                     "required": false,
-                    "code": "PAST",
+                    "code": "algaePT",
                     "defaultValue": 0,
                     "min": 0,
                     "step": 1

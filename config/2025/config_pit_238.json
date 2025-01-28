@@ -1,6 +1,6 @@
 {
     "title": "QRScout",
-    "page_title": "Reefscape: Pit",
+    "page_title": "Reefscape:Pit",
     "delimiter": "\t",
     "teamNumber": 238,
     "theme": {
@@ -180,7 +180,7 @@
                     "choices": {
                         "1": "None",
                         "2": "Ground",
-                        "3": "Human Player",
+                        "3": "Coral Station",
                         "4": "Both"
                     },
                     "multiSelect": true
