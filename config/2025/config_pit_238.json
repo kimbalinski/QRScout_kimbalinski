@@ -88,9 +88,9 @@
                     "code": "PitOrg",
                     "defaultValue": "",
                     "choices": {
-                        "SP1": "Poor",
-                        "SP2": "OK",
-                        "SP3": "Good"
+                        "Poor": "Poor",
+                        "OK": "OK",
+                        "Good": "Good"
                     }
                 },
                 {
@@ -101,9 +101,9 @@
                     "code": "Wiring",
                     "defaultValue": "",
                     "choices": {
-                        "SP1": "Poor",
-                        "SP2": "OK",
-                        "SP3": "Good"
+                        "Poor": "Poor",
+                        "OK": "OK",
+                        "Good": "Good"
                     }
                 },
                 {
@@ -114,9 +114,9 @@
                     "code": "Bumper",
                     "defaultValue": "",
                     "choices": {
-                        "SP1": "Poor",
-                        "SP2": "OK",
-                        "SP3": "Good"
+                        "Poor": "Poor",
+                        "OK": "OK",
+                        "Good": "Good"
                     }
                 },
                 {
@@ -142,10 +142,10 @@
                     "code": "DT",
                     "defaultValue": "",
                     "choices": {
-                        "SP1": "Omnis/Mecanums",
-                        "SP2": "Swerve",
-                        "SP3": "Tank Drive",
-                        "SP4": "Other"
+                        "Omni": "Omnis/Mecanums",
+                        "Swerve": "Swerve",
+                        "Tank": "Tank Drive",
+                        "Other": "Other"
                     }
                 },
                 {
@@ -168,20 +168,20 @@
                     "description": "Do they have a mechanism to score coral?",
                     "type": "boolean",
                     "required": false,
-                    "code": "Coral",
+                    "code": "coral",
                     "defaultValue": false
                 },
                 {
                     "title": "Coral Pickup Location",
                     "type": "select",
                     "required": false,
-                    "code": "TGPL",
+                    "code": "coralPickup",
                     "defaultValue": "",
                     "choices": {
-                        "1": "None",
-                        "2": "Ground",
-                        "3": "Coral Station",
-                        "4": "Both"
+                        "None": "None",
+                        "Ground": "Ground",
+                        "CStation": "Coral Station",
+                        "Both": "Both"
                     },
                     "multiSelect": true
                 },
@@ -190,7 +190,7 @@
                     "description": "Do they score coral on level 1?",
                     "type": "boolean",
                     "required": false,
-                    "code": "Coral1",
+                    "code": "coral1",
                     "defaultValue": false
                 },
                 {
@@ -198,7 +198,7 @@
                     "description": "Do they score coral on level 2?",
                     "type": "boolean",
                     "required": false,
-                    "code": "Coral1",
+                    "code": "coral2",
                     "defaultValue": false
                 },
                 {
@@ -206,7 +206,7 @@
                     "description": "Do they score coral on level 3?",
                     "type": "boolean",
                     "required": false,
-                    "code": "Coral1",
+                    "code": "coral3",
                     "defaultValue": false
                 },
                 {
@@ -214,7 +214,7 @@
                     "description": "Do they score coral on level 4?",
                     "type": "boolean",
                     "required": false,
-                    "code": "Coral1",
+                    "code": "coral4",
                     "defaultValue": false
                 }
             ]
@@ -227,7 +227,7 @@
                     "description": "Do they have a mechanism to score algae?",
                     "type": "boolean",
                     "required": false,
-                    "code": "Algae",
+                    "code": "algae",
                     "defaultValue": false
                 },
                 {
@@ -235,7 +235,7 @@
                     "description": "Do they score algae on barge?",
                     "type": "boolean",
                     "required": false,
-                    "code": "AlgaeB",
+                    "code": "algaeB",
                     "defaultValue": false
                 },
                 {
@@ -243,7 +243,7 @@
                     "description": "Do they score algae in processor?",
                     "type": "boolean",
                     "required": false,
-                    "code": "AlgaeP",
+                    "code": "algaeP",
                     "defaultValue": false
                 },
                 {
@@ -251,7 +251,7 @@
                     "description": "Do they score algae on barge?",
                     "type": "boolean",
                     "required": false,
-                    "code": "HPAlgaeB",
+                    "code": "hpAlgaeB",
                     "defaultValue": false
                 }
             ]
@@ -264,7 +264,7 @@
                     "description": "Can they climb the shallow cage?",
                     "type": "boolean",
                     "required": false,
-                    "code": "Shallow",
+                    "code": "shallow",
                     "defaultValue": false
                 },
                 {
@@ -272,7 +272,7 @@
                     "description": "Can they climb the deep cage?",
                     "type": "boolean",
                     "required": false,
-                    "code": "Deep",
+                    "code": "deep",
                     "defaultValue": false
                 }
             ]

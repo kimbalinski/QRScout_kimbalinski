@@ -113,9 +113,9 @@
                     "code": "start",
                     "defaultValue": "",
                     "choices": {
-                        "R1": "Left",
-                        "R2": "Middle",
-                        "R3": "Right"
+                        "Left": "Left",
+                        "Middle": "Middle",
+                        "Right": "Right"
                     }
                 },
                 {
@@ -134,8 +134,8 @@
                     "code": "cagePos",
                     "defaultValue": "",
                     "choices": {
-                        "SP1": "Deep",
-                        "SP2": "Shallow"
+                        "Deep": "Deep",
+                        "Shallow": "Shallow"
                     }
                 }
             ]
@@ -148,7 +148,7 @@
                     "description": "Check if the robot completed leave during autonomous.",
                     "type": "boolean",
                     "required": false,
-                    "code": "Leave",
+                    "code": "leave",
                     "defaultValue": false
                 },
                 {
