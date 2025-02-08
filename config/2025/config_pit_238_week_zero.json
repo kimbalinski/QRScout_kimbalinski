@@ -1,0 +1,291 @@
+{
+    "title": "QRScout",
+    "page_title": "Reefscape: Pit",
+    "delimiter": "\t",
+    "teamNumber": 238,
+    "theme": {
+        "light": {
+            "background": "0 0% 100%",
+            "foreground": "0 0% 3.9%",
+            "card": "0 0% 100%",
+            "card_foreground": "0 0% 3.9%",
+            "popover": "0 0% 100%",
+            "popover_foreground": "0 0% 3.9%",
+            "primary": "0 0% 0%",
+            "primary_foreground": "60 100% 47%",
+            "secondary": "0 0% 96.1%",
+            "secondary_foreground": "0 0% 9%",
+            "muted": "0 0% 96.1%",
+            "muted_foreground": "0 0% 45.1%",
+            "accent": "0 0% 96.1%",
+            "accent_foreground": "0 0% 9%",
+            "destructive": "0 84.2% 60.2%",
+            "destructive_foreground": "0 0% 98%",
+            "border": "0 0% 89.8%",
+            "input": "0 0% 89.8%",
+            "ring": "354.44 71.3% 47.9%",
+            "chart_1": "12 76% 61%",
+            "chart_2": "173 58% 39%",
+            "chart_3": "197 37% 24%",
+            "chart_4": "43 74% 66%",
+            "chart_5": "27 87% 67%"
+        },
+        "dark": {
+            "background": "0 0% 3.9%",
+            "foreground": "0 0% 98%",
+            "card": "0 0% 3.9%",
+            "card_foreground": "0 0% 98%",
+            "popover": "0 0% 3.9%",
+            "popover_foreground": "0 0% 98%",
+            "primary": "60 100% 47%",
+            "primary_foreground": "0 0% 0%",
+            "secondary": "0 0% 14.9%",
+            "secondary_foreground": "0 0% 98%",
+            "muted": "0 0% 14.9%",
+            "muted_foreground": "0 0% 63.9%",
+            "accent": "0 0% 14.9%",
+            "accent_foreground": "0 0% 98%",
+            "destructive": "0 62.8% 30.6%",
+            "destructive_foreground": "0 0% 98%",
+            "border": "0 0% 14.9%",
+            "input": "0 0% 14.9%",
+            "ring": "354.44 71.3% 47.9%",
+            "chart_1": "220 70% 50%",
+            "chart_2": "160 60% 45%",
+            "chart_3": "30 80% 55%",
+            "chart_4": "280 65% 60%",
+            "chart_5": "340 75% 55%"
+        }
+    },
+    "sections": [
+        {
+            "name": "Team Info",
+            "preserveDataOnReset": true,
+            "fields": [
+                {
+                    "title": "Scouter Initials",
+                    "description": "Enter the initials of the scouters.",
+                    "type": "text",
+                    "required": true,
+                    "code": "scouter",
+                    "defaultValue": ""
+                },
+                {
+                    "title": "Team Number",
+                    "description": "The team number of the robot you're scouting.",
+                    "type": "number",
+                    "required": true,
+                    "code": "teamNumber",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "max": 19999
+                },
+                {
+                    "title": "Observation - Pit Organization",
+                    "description": "How well is their pit organized?",
+                    "type": "select",
+                    "required": true,
+                    "code": "PitOrg",
+                    "defaultValue": "",
+                    "choices": {
+                        "Poor": "Poor",
+                        "OK": "OK",
+                        "Good": "Good"
+                    }
+                },
+                {
+                    "title": "Observation - Wiring Quality",
+                    "description": "How well is their robot wired?",
+                    "type": "select",
+                    "required": true,
+                    "code": "Wiring",
+                    "defaultValue": "",
+                    "choices": {
+                        "Poor": "Poor",
+                        "OK": "OK",
+                        "Good": "Good"
+                    }
+                },
+                {
+                    "title": "Observation - Bumper Quality",
+                    "description": "How well constructed are their bumpers?",
+                    "type": "select",
+                    "required": true,
+                    "code": "Bumper",
+                    "defaultValue": "",
+                    "choices": {
+                        "Poor": "Poor",
+                        "OK": "OK",
+                        "Good": "Good"
+                    }
+                },
+                {
+                    "title": "Batteries",
+                    "description": "How many batteries do they have?",
+                    "type": "number",
+                    "required": false,
+                    "code": "bat",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "max": 20
+                }
+            ]
+        },
+        {
+            "name": "Robot Info",
+            "fields": [
+                {
+                    "title": "Drivetrain",
+                    "description": "What is their drivetrain?",
+                    "type": "select",
+                    "required": true,
+                    "code": "DT",
+                    "defaultValue": "",
+                    "choices": {
+                        "Omni": "Omnis/Mecanums",
+                        "Swerve": "Swerve",
+                        "Tank": "Tank Drive",
+                        "Other": "Other"
+                    }
+                },
+                {
+                    "title": "Robot Weight",
+                    "description": "What is the weight of the robot?",
+                    "type": "number",
+                    "required": false,
+                    "code": "weight",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "max": 199
+                },
+                {
+                    "title": "Robot Width with Bumpers",
+                    "description": "What is the width of the robot with bumpers?",
+                    "type": "number",
+                    "required": false,
+                    "code": "size",
+                    "defaultValue": 0,
+                    "min": 0,
+                    "max": 199
+                }                
+            ]
+        },
+        {
+            "name": "Coral",
+            "fields": [
+                {
+                    "title": "Coral?",
+                    "description": "Do they have a mechanism to score coral?",
+                    "type": "boolean",
+                    "required": false,
+                    "code": "coral",
+                    "defaultValue": false
+                },
+                {
+                    "title": "Coral Pickup Location",
+                    "type": "select",
+                    "required": false,
+                    "code": "coralPickup",
+                    "defaultValue": "",
+                    "choices": {
+                        "None": "None",
+                        "Ground": "Ground",
+                        "CStation": "Coral Station",
+                        "Both": "Both"
+                    },
+                    "multiSelect": true
+                },
+                {
+                    "title": "Score Coral Level 1?",
+                    "description": "Do they score coral on level 1?",
+                    "type": "boolean",
+                    "required": false,
+                    "code": "coral1",
+                    "defaultValue": false
+                },
+                {
+                    "title": "Score Coral Level 2?",
+                    "description": "Do they score coral on level 2?",
+                    "type": "boolean",
+                    "required": false,
+                    "code": "coral2",
+                    "defaultValue": false
+                },
+                {
+                    "title": "Score Coral Level 3?",
+                    "description": "Do they score coral on level 3?",
+                    "type": "boolean",
+                    "required": false,
+                    "code": "coral3",
+                    "defaultValue": false
+                },
+                {
+                    "title": "Score Coral Level 4?",
+                    "description": "Do they score coral on level 4?",
+                    "type": "boolean",
+                    "required": false,
+                    "code": "coral4",
+                    "defaultValue": false
+                }
+            ]
+        },
+        {
+            "name": "Algae",
+            "fields": [
+                {
+                    "title": "Algae?",
+                    "description": "Do they have a mechanism to score algae?",
+                    "type": "boolean",
+                    "required": false,
+                    "code": "algae",
+                    "defaultValue": false
+                },
+                {
+                    "title": "Robot Score Algae on Barge?",
+                    "description": "Do they score algae on barge?",
+                    "type": "boolean",
+                    "required": false,
+                    "code": "algaeB",
+                    "defaultValue": false
+                },
+                {
+                    "title": "Robot Score Algae in Processor?",
+                    "description": "Do they score algae in processor?",
+                    "type": "boolean",
+                    "required": false,
+                    "code": "algaeP",
+                    "defaultValue": false
+                },
+                {
+                    "title": "Human Player Score Algae on Barge?",
+                    "description": "Do they score algae on barge?",
+                    "type": "boolean",
+                    "required": false,
+                    "code": "hpAlgaeB",
+                    "defaultValue": false
+                }
+            ]
+        },
+        {
+            "name": "Cage",
+            "fields": [
+                {
+                    "title": "Shallow Cage",
+                    "description": "Can they climb the shallow cage?",
+                    "type": "boolean",
+                    "required": false,
+                    "code": "shallow",
+                    "defaultValue": false
+                },
+                {
+                    "title": "Deep Cage",
+                    "description": "Can they climb the deep cage?",
+                    "type": "boolean",
+                    "required": false,
+                    "code": "deep",
+                    "defaultValue": false
+                }
+            ]
+        }
+    ]
+}
